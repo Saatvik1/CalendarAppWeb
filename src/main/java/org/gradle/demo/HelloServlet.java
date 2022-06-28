@@ -8,6 +8,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
@@ -28,25 +31,24 @@ public class HelloServlet extends HttpServlet {
             throws ServletException, IOException {
         String eventSummary = request.getParameter("titleSummary");
 
+        //SimpleDateFormat Class to Format the Data from Date field in index.html
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        //Parse the Date Data
+        //Need to add check for when user puts an end date earlier than start date.
+        try {
+            Date eventStart = sdf.parse(request.getParameter("startDate"));
+            Date endStart = sdf.parse(request.getParameter("endDate"));
+        } catch (ParseException e) {}
 
-        EventCreator newEvent;
+        EventCreator newEvent = new EventCreator();
 
-        if (eventSummary == null) {
+        if (eventSummary == null)
             eventSummary = "(No title)";
-             newEvent = new EventCreator();
-            try {
-                newEvent.insertEvent();
-            } catch (GeneralSecurityException e) {
-                throw new RuntimeException(e);
-            }
-        } else {
-            newEvent = new EventCreator();
-            newEvent.setSummary(eventSummary);
-            try {
-                newEvent.insertEvent();
-            } catch (GeneralSecurityException e) {
-                throw new RuntimeException(e);
-            }
+        newEvent.setSummary(eventSummary);
+        try {
+            newEvent.insertEvent();
+        } catch (GeneralSecurityException e) {
+            throw new RuntimeException(e);
         }
 
         request.setAttribute("event", eventSummary);
