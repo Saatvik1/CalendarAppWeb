@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3e0208-2b14-457f-9b01-80a8cbc7bf61" name="Changes" comment="" />
+    <list default="true" id="6a21c8ae-61fc-4b93-b625-87b00f3bf82c" name="Changes" comment="Added the most basic, rudimentary, chief, elementary, principal. root, and core implementation of the Dates.">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty11/webapps-exploded/GoogleCalTest/jsp/org/apache/jsp/response_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty11/webapps-exploded/GoogleCalTest/jsp/org/apache/jsp/response_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,103 +40,54 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="GoogleCalTest" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2AzjxAqYgy2FdZGMQh3BvuLLWTJ" />
+  <component name="ProjectId" id="2BBVc863lmtO5PjPBD51wDSod0h" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Saatvik Sandal/IdeaProjects/GoogleCalTest/src/main/java/org/gradle/demo",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java\org\gradle\demo" />
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\resources" />
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java\org\main\resources" />
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\resources" />
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="gradle mkdir -p src/main/java src/main/resources " />
-      <command value="mkdir -p src/main/java src/main/resources " />
-      <command value="gradle gradle init --type basic " />
-      <command value="gradle mkdir -p src/main/java src/main/resources assemble" />
-      <command value="gradle mkdir -p src/main/java src/main" />
-      <command value="gradle mkdir -p src/main" />
-      <command value="gradle mkdir -p src/main/java src/main/resources" />
-      <command value="gradle init --type basic" />
-      <command value="gradle mkdir -p src/main/java src/main/resources  " />
-      <command value="mkdir -p src/main/java src/main/resources  " />
-      <command value="mkdir -p src/main/java/main/resources  " />
-      <command value="gradle run" />
-      <command value="gradle -v" />
-      <command value="gradle wrapper --gradle-version=4.10.3" />
-      <command value="gradle undo" />
-      <command value="gradle ./gradlew appRun" />
-      <command value="gradle appRrn" />
-      <command value="gradle appRun" />
-      <command value="gradle war" />
-      <command value="gradle :war" />
-      <command value="gradle :appRun" />
-    </option>
-  </component>
-  <component name="RunManager" selected="Gradle.GoogleCalTest [appRun]">
+  <component name="RunManager" selected="Gradle.Yes">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <envs>
-        <env name="JAVA_HOME" value="C:\Users\Saatvik Sandal\.jdks\corretto-16.0.2" />
-      </envs>
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="GoogleCalTest.test" />
+      <module name="GoogleCalTest.main" />
+      <option name="PROGRAM_PARAMETERS" value="--warning-mode all" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoogleCalTest [:appRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'GoogleCalTest'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -124,93 +97,26 @@
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value=":appRun" />
-          </list>
+          <list />
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GoogleCalTest [:war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Yes" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="appRun" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value=":war" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GoogleCalTest [appRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
           <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="appRun" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GoogleCalTest [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--scan --scan --scan --scan --scan --scan" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="run" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GoogleCalTest [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="war" />
-          </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
@@ -221,35 +127,62 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Gradle.GoogleCalTest [:appRun]" />
-      <item itemvalue="Gradle.GoogleCalTest [:war]" />
-      <item itemvalue="Gradle.GoogleCalTest [appRun]" />
-      <item itemvalue="Gradle.GoogleCalTest [war]" />
-      <item itemvalue="Gradle.GoogleCalTest [run]" />
+      <item itemvalue="Gradle.Yes" />
+      <item itemvalue="Gradle.Tests in 'GoogleCalTest'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GoogleCalTest [appRun]" />
-        <item itemvalue="Gradle.GoogleCalTest [:appRun]" />
-        <item itemvalue="Gradle.GoogleCalTest [run]" />
-        <item itemvalue="Gradle.GoogleCalTest [:war]" />
-        <item itemvalue="Gradle.GoogleCalTest [war]" />
+        <item itemvalue="Gradle.Tests in 'GoogleCalTest'" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd3e0208-2b14-457f-9b01-80a8cbc7bf61" name="Changes" comment="" />
-      <created>1656019554562</created>
+      <changelist id="6a21c8ae-61fc-4b93-b625-87b00f3bf82c" name="Changes" comment="" />
+      <created>1656379542264</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1656019554562</updated>
+      <updated>1656379542264</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added the most basic, rudimentary, chief, elementary, principal. root, and core implementation of the Dates.">
+      <created>1656384646037</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656384646037</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added the most basic, rudimentary, chief, elementary, principal. root, and core implementation of the Dates.">
+      <created>1656385087392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656385087392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added the most basic, rudimentary, chief, elementary, principal. root, and core implementation of the Dates." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the most basic, rudimentary, chief, elementary, principal. root, and core implementation of the Dates." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoogleCalTest$Main.ic" NAME="Main Coverage Results" MODIFIED="1656380280130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
