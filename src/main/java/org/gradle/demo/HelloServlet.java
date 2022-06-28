@@ -35,9 +35,11 @@ public class HelloServlet extends HttpServlet {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         //Parse the Date Data
         //Need to add check for when user puts an end date earlier than start date.
+        Date eventStart = null;
+        Date eventEnd = null;
         try {
-            Date eventStart = sdf.parse(request.getParameter("startDate"));
-            Date endStart = sdf.parse(request.getParameter("endDate"));
+            eventStart = sdf.parse(request.getParameter("startDate"));
+            eventEnd = sdf.parse(request.getParameter("endDate"));
         } catch (ParseException e) {}
 
         EventCreator newEvent = new EventCreator();
@@ -45,6 +47,8 @@ public class HelloServlet extends HttpServlet {
         if (eventSummary == null)
             eventSummary = "(No title)";
         newEvent.setSummary(eventSummary);
+        newEvent.setStartTime(eventStart);
+        newEvent.setEndTime(eventEnd);
         try {
             newEvent.insertEvent();
         } catch (GeneralSecurityException e) {
