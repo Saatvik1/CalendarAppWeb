@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Calendar</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
 
 
 <div class="container">
+    <div class="popup" id="popup">
+        <form method="POST" action="hello">
+            <h2>New event:</h2>
+            <input type="text" id="set-title-summary-input" name="titleSummary" />
+            <input type="date" id="set-event-start-date" name="startDate" />
+            <input type="date" id="set-event-end-date" name="endDate" />
+            <input type="submit" id="set-title-button" value="Set Title" />
+        </form>
+    </div>
+
+
+
+
     <div class="calendar">
         <div class="month">
             <i class="fas fa-angle-left prev"></i>
             <div class="date">
-                <h1></h1>
+                <h1 id = "rips">June</h1>
                 <p></p>
             </div>
             <i class="fas fa-angle-right next"></i>
@@ -37,6 +51,48 @@
         </div>
         <div class="days">
 
+            <div class="prev-date">26</div>
+            <div class="prev-date">27</div>
+            <div class="prev-date">28</div>
+            <div class="prev-date">29</div>
+            <div class="prev-date">30</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+            <div>17</div>
+            <div>18</div>
+            <div>19</div>
+            <div>20</div>
+            <div>21</div>
+            <div>22</div>
+            <div>23</div>
+            <div>24</div>
+            <div>25</div>
+            <div>26</div>
+            <div>27</div>
+            <div class="today">28</div>
+            <div>29</div>
+            <div>30</div>
+            <div>31</div>
+            <div class="next-date">1</div>
+            <div class="next-date">2</div>
+            <div class="next-date">3</div>
+            <div class="next-date">4</div>
+            <div class="next-date">5</div>
+            <div class="next-date">6</div>
         </div>
     </div>
 </div>
@@ -46,13 +102,14 @@
 <p>Say <a href="hello">Hello</a></p>
 <form method="POST" action="hello">
     <h2>New event title:</h2>
-    <input type="text" id="set-title-summary-input" name="titleSummary" />
-    <input type="date" id="set-event-start-date" name="startDate" />
-    <input type="date" id="set-event-end-date" name="endDate" />
-    <input type="submit" id="set-title-button" value="Set Title" />
+    <input type="text" id="sdw" name="titleSummary" />
+    <input type="date" id="swd" name="startDate" />
+    <input type="date" id="sdas" name="endDate" />
+    <input type="submit" id="dff" value="Set Title" />
 </form>
 
 <!-- End your code here -->
 <script src="script.js"></script>
 </body>
+
 </html>

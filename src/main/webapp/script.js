@@ -42,11 +42,8 @@ const renderCalendar = () => {
     "December",
   ];
 
-  function getMonthString(compare){
-  return months.findIndex("June") + 1;
-  }
 
-  document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+  document.querySelector(".date h1").innerHTML = months[date.getMonth()] + " " + date.getFullYear();
 
   document.querySelector(".date p").innerHTML = new Date().toDateString();
 
@@ -90,6 +87,9 @@ function stringGenerator1(monthCon, dateCon){
 let finalString = "";
 
 finalString += date.getFullYear() + "-";
+monthCon = monthCon + "";
+monthCon.replace(" " + date.getFullYear(),"");
+dateCon = dateCon + "";
 
  if(monthCon.length == 2){
  finalString += monthCon + "-";
@@ -141,6 +141,8 @@ return finalString;
 
 const onClick = (event) => {
     let dayIdClicked = event.srcElement.id;
+    console.log(dayIdClicked);
+
     let popup = document.getElementById("popup");
     popup.classList.add("open-popup");
     let startDate = document.getElementById("set-event-start-date");
@@ -153,32 +155,45 @@ const onClick = (event) => {
 
 
 const months = [
-    "JANUARY",
-    "FEBRUARY",
-    "MARCH",
-    "APRIL",
-    "MAY",
-    "JUNE",
-    "JULY",
-    "AUGUST",
-    "SEPTEMBER",
-    "OCTOBER",
-    "NOVEMBER",
-    "DECEMBER",
+    "JANUARY " + date.getFullYear(),
+    "FEBRUARY "+ date.getFullYear(),
+    "MARCH "+ date.getFullYear(),
+    "APRIL "+ date.getFullYear(),
+    "MAY "+ date.getFullYear(),
+    "JUNE "+ date.getFullYear(),
+    "JULY "+ date.getFullYear(),
+    "AUGUST "+ date.getFullYear(),
+    "SEPTEMBER"+ date.getFullYear(),
+    "OCTOBER "+ date.getFullYear(),
+    "NOVEMBER "+ date.getFullYear(),
+    "DECEMBER "+ date.getFullYear(),
   ];
 
- monthInput = months.findIndex(month => month === compare) + 1;
+monthInput = months.findIndex(month => month === compare) + 1;
 
-  stringGenerator1(monthInput,dayInput);
-
-  startDate.value = stringGenerator1(monthInput, dayInput);
-  endDate.value = stringGenerator2(monthInput, dayInput);
+if(dayIdClicked === ""){
+startDate.value = stringGenerator1(new Date().getMonth() + 1, new Date().getDate());
+endDate.value = stringGenerator2(new Date().getMonth() + 1, new Date().getDate() + 1);
+} else if(dayIdClicked.includes("next")){
+date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+} else if(dayIdClicked.includes("prev")) {
+date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+} else {
+startDate.value = stringGenerator1(monthInput, dayInput);
+endDate.value = stringGenerator2(monthInput, dayInput);
 }
+
+  }
+
 
 document.querySelector(".days").addEventListener("click", onClick);
 
 renderCalendar();
 
-//Display the year next to the month
-//Fix so that if clicked off a date it returns as null. and set it to the current date and the next date.
-//Add so that if user clicks on next months date the calendar switches to the next month.
+
+
+//Add the rest of the google like options when clicked on a date.
+
+//When double click a date, redirect the page to a in the day hourly view.
