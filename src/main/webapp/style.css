@@ -19,6 +19,27 @@ html {
     align-items: center;
 }
 
+.popup{
+  width: 500px;
+  height: 50px;
+  color: #fff;
+  background-color: #5D3FD3;
+  text-align: center;
+  border-radius: 1rem;
+  position: absolute;
+  top: 5%;
+  box-shadow: 0 0 17px 3px rgba(255,255,255,0.7);
+  transform: translateY(-50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: 5%;
+  transform: translateY(0%) scale(1);
+}
+
 .calendar {
     width: 45rem;
     height: 52rem;
@@ -26,9 +47,6 @@ html {
     box-shadow: 0 0 17px 7px rgba(255,255,255,0.7);
 }
 
-.calendar div:hover{
-
-}
 
 .month {
     width: 100%;
