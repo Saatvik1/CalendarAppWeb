@@ -40,11 +40,80 @@ html {
   transform: translateY(0%) scale(1);
 }
 
+.moreInfoPopup{
+width: 45rem;
+height: 52rem;
+background-color: #5D3FD3;
+box-shadow: 0 0 17px 7px rgba(255,255,255,0.7);
+transform: translateX(-75%);
+position: relative;
+visibility: hidden;
+transform: scale(0.1);
+transition: transform 0.4s;
+}
+
+.open-moreInfoPopup{
+visibility: visible;
+transform:  translateX(-75%) scale(1);
+}
+
+input[id=set-end-time]{
+position: relative;
+left: 8.5rem;
+padding: 5px;
+}
+
+input[id=set-start-time]{
+position: relative;
+left: 6rem;
+padding: 5px;
+}
+
+input[id = set-description]{
+width: 43rem;
+height: 19rem;
+padding: 10px;
+position: relative;
+top: 20rem;
+left: 1rem;
+align-items: center;
+}
+
+input[id = set-location]{
+width: 300px;
+height: ;
+padding: 5px;
+position: relative;
+top: 17rem;
+left: 1rem ;
+}
+
+input[id = set-title-button2]{
+width:10rem;
+
+position: relative;
+background-color: #167e56;
+border: 0;
+top: 45rem;
+left: 30rem;
+}
+
+.Circles{
+width: 45rem;
+height: 52rem;
+background-color: #5D3FD3;
+box-shadow: 0 0 17px 7px rgba(255,255,255,0.7);
+position: absolute;
+left: 130rem;
+
+}
+
 .calendar {
     width: 45rem;
     height: 52rem;
     background-color: #5D3FD3;
     box-shadow: 0 0 17px 7px rgba(255,255,255,0.7);
+    transform: translateX(-50%);
 }
 
 
@@ -126,3 +195,4 @@ html {
 .today {
     background-color: #167e56;
 }
+

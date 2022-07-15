@@ -24,7 +24,7 @@ import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
 
-/* class to demonstarte use of Calendar events list API */
+/* class to demonstrate use of Calendar events list API */
 public class Main {
     /** Application name. */
     private static final String APPLICATION_NAME = "peepee";

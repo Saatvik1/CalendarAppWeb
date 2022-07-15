@@ -26,10 +26,31 @@
             <input type="date" id="set-event-end-date" name="endDate" />
             <input type="submit" id="set-title-button" value="Set Title" />
         </form>
+            <input type="submit" id="more-options" value="Display More Options"/>
     </div>
 
+<div class="moreInfoPopup" id ="moreInfoClass">
+    <form method="POST" action="setdetailedevent">
+        <h2>New Event:</h2>
+    <input type="text" id="set-title-summary-input2" name="titleSummary" />
+    <input type="date" id="set-event-start-date2" name="startDate" />
+    <input type="date" id="set-event-end-date2" name="endDate" />
+        <input type="submit" id="set-title-button2" value="Create Event" />
+    <input type="time" id="set-start-time" name="Set Start Time" />
+    <input type="time" id="set-end-time" name="Set End Time"/>
+    <input type="text" id="set-location" name="Set Location"/>
+    <input type="text" id="set-description" name="Set Description"/>
 
+    <! -- insert button for repeat... then ask what kind of repetition... every day, week, month, year, specific days, every other week -->
+    </form>
+</div>
 
+    <div class="Circles" id="groupCircles">
+        <h2>Groups: </h2>
+        <div class="Groups" id="groups">
+
+        </div>
+    </div>
 
     <div class="calendar">
         <div class="month">
@@ -97,18 +118,9 @@
     </div>
 </div>
 
-<!-- Start your code here -->
 
-<p>Say <a href="hello">Hello</a></p>
-<form method="POST" action="hello">
-    <h2>New event title:</h2>
-    <input type="text" id="sdw" name="titleSummary" />
-    <input type="date" id="swd" name="startDate" />
-    <input type="date" id="sdas" name="endDate" />
-    <input type="submit" id="dff" value="Set Title" />
-</form>
 
-<!-- End your code here -->
+
 <script src="script.js"></script>
 </body>
 

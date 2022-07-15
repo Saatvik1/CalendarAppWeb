@@ -5,6 +5,8 @@ import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInsta
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeFlow;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
+import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.client.googleapis.auth.oauth2.GoogleOAuthConstants;
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
@@ -41,11 +43,20 @@ public class ReadEvents {
     /** Directory to store authorization tokens for this application. */
     private static final String TOKENS_DIRECTORY_PATH = "tokens";
 
+
+    private static String userEmail;
+
+    public static String getUserEmail(){
+        return userEmail;
+    }
+
+
+
     /**
      * Global instance of the scopes required by this quickstart.
      * If modifying these scopes, delete your previously saved tokens/ folder.
      */
-    private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR);
+    private static final List<String> SCOPES = Collections.singletonList(CalendarScopes.CALENDAR + " https://www.googleapis.com/auth/userinfo.email");
     private static final String CREDENTIALS_FILE_PATH = "src/main/resources/credentials.json";
 
     /**
@@ -55,7 +66,7 @@ public class ReadEvents {
      * @throws IOException If the credentials.json file cannot be found.
      */
     static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
-        // Load client secrets.
+        //Load client secrets.
         FileReader in;
         try {
              in = new FileReader(CREDENTIALS_FILE_PATH);
@@ -75,6 +86,12 @@ public class ReadEvents {
         LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
         Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
         //returns an authorized Credential object.
+        System.out.println(credential.getAccessToken());
+
+        ReceiveEmail a = new ReceiveEmail();
+
+        userEmail = a.extractEmail(a.getInfo(credential.getAccessToken()));
+
         return credential;
     }
 
@@ -116,5 +133,31 @@ public class ReadEvents {
 
         return eventList;
 
+    }
+
+
+    static Credential getCredentialsShallow(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
+        //Load client secrets.
+        FileReader in;
+        try {
+            in = new FileReader(CREDENTIALS_FILE_PATH);
+        } catch (FileNotFoundException e){
+            throw new FileNotFoundException("Resource not found: " + CREDENTIALS_FILE_PATH);
+        }
+
+
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY, in);
+
+        // Build flow and trigger user authorization request.
+        GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
+                HTTP_TRANSPORT, JSON_FACTORY, clientSecrets, SCOPES)
+                .setDataStoreFactory(new FileDataStoreFactory(new java.io.File(TOKENS_DIRECTORY_PATH)))
+                .setAccessType("offline")
+                .build();
+        LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
+        Credential credential = new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
+        //returns an authorized Credential object.
+
+        return credential;
     }
 }

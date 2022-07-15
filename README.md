@@ -1,5 +1,16 @@
 # CalendarAppWeb
 
+Goals for NOW: 
+Make a group class, find a way to extract emails from the group and display it on the website
+Move things to a database, there shared circles will connect to google calendars, make a new calendar, 
+and have shared events. 
+
+When able to view same events on a (different than default, and shared) calendar, start
+implementing feature where you can view free time. 
+Could have a second calendar underneath the first showing free time on a weekly basis in the circle. 
+
+
+
 IF user clicks once on the date, it will open a window to add 
 all the elements to make an event and when click add or delete on that 
 popup window

@@ -141,7 +141,7 @@ return finalString;
 
 const onClick = (event) => {
     let dayIdClicked = event.srcElement.id;
-    console.log(dayIdClicked);
+
 
     let popup = document.getElementById("popup");
     popup.classList.add("open-popup");
@@ -170,10 +170,9 @@ const months = [
   ];
 
 monthInput = months.findIndex(month => month === compare) + 1;
-
-if(dayIdClicked === ""){
+ if(dayIdClicked === ""){
 startDate.value = stringGenerator1(new Date().getMonth() + 1, new Date().getDate());
-endDate.value = stringGenerator2(new Date().getMonth() + 1, new Date().getDate() + 1);
+endDate.value = stringGenerator2(new Date().getMonth() + 1, new Date().getDate());
 } else if(dayIdClicked.includes("next")){
 date.setMonth(date.getMonth() + 1);
   renderCalendar();
@@ -184,11 +183,27 @@ date.setMonth(date.getMonth() - 1);
 startDate.value = stringGenerator1(monthInput, dayInput);
 endDate.value = stringGenerator2(monthInput, dayInput);
 }
+  }
+
+  const onClickPopup = (event) => {
+  let buttonIdClicked = event.srcElement.id;
+  let moreInfo = document.getElementById("moreInfoClass");
+
+  if(buttonIdClicked === "more-options"){
+  moreInfo.classList.add("open-moreInfoPopup");
+
+  }
+
+  }
+
+  function printUserEmail(userEmail){
+  console.log(userEmail);
 
   }
 
 
 document.querySelector(".days").addEventListener("click", onClick);
+document.querySelector(".popup").addEventListener("click", onClickPopup);
 
 renderCalendar();
 

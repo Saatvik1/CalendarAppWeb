@@ -37,6 +37,9 @@ import java.util.*;
 
 public class EventCreator extends ReadEvents {
     private Event event;
+    private String creatorEmail;
+
+
 
     public EventCreator(){
         this.event = new Event();
@@ -47,6 +50,14 @@ public class EventCreator extends ReadEvents {
         this.event.setStart(new EventDateTime().setDateTime(start));
         DateTime end = new DateTime(endDate, TimeZone.getTimeZone("UTC"));
         this.event.setEnd(new EventDateTime().setDateTime(end));
+    }
+
+    public void setCreatorEmail(String email){
+        this.creatorEmail = email;
+    }
+
+    public String getCreatorEmail(){
+        return this.creatorEmail;
     }
 
     public void setTitle(String title){
@@ -110,6 +121,11 @@ public class EventCreator extends ReadEvents {
                 .setApplicationName(ReadEvents.getApplicationName())
                 .build();
         this.event = service.events().insert("primary",this.event).execute();
+    }
+
+    public void setLocation(String location){
+        //this.event.setLocation(event.get);
+        this.event.setLocation(location);
     }
 }
 

@@ -4,19 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3e0208-2b14-457f-9b01-80a8cbc7bf61" name="Changes" comment="Add more functionality to the calendar. &#10;Added a feature where when the user clicks on a date, there will be a pop up and it auto fills the dates to the clicked date and the next date after.">
+    <list default="true" id="cd3e0208-2b14-457f-9b01-80a8cbc7bf61" name="Changes" comment="Display the year next to the month DONE&#10;Fix so that if clicked off a date it returns as null. and set it to the current date and the next date. DONE&#10;Add so that if user clicks on next months date the calendar switches to the next month. DONE">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/DetailedEventSubmit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/Groups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/RenewToken.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/EventCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/EventCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/HelloServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/ReadEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/gradle/demo/ReadEvents.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/inplaceWebapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/inplaceWebapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/credentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/credentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/serverBaseDir_jetty11/webapps-exploded/GoogleCalTest/jsp/org/apache/jsp/response_jsp.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/serverBaseDir_jetty11/webapps-exploded/GoogleCalTest/jsp/org/apache/jsp/response_jsp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradle/demo/EventCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/EventCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradle/demo/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/HelloServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/gradle/demo/ReadEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/gradle/demo/ReadEvents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/credentials.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/credentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/tokens/StoredCredential" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tokens/StoredCredential" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +83,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Saatvik Sandal/IdeaProjects/GoogleCalTest",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Saatvik Sandal/IdeaProjects/GoogleCalTest/src/main/resources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java\org\gradle\demo" />
       <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\resources" />
+      <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java\org\gradle\demo" />
       <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java\org\main\resources" />
       <recent name="C:\Users\Saatvik Sandal\IdeaProjects\GoogleCalTest\src\main\java" />
     </key>
@@ -120,6 +136,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.GoogleCalTest [:appRun]">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="GoogleCalTest.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="corretto-16" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -216,42 +239,21 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GoogleCalTest [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="war" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Gradle.GoogleCalTest [:appRun]" />
       <item itemvalue="Gradle.GoogleCalTest [:war]" />
       <item itemvalue="Gradle.GoogleCalTest [appRun]" />
-      <item itemvalue="Gradle.GoogleCalTest [war]" />
       <item itemvalue="Gradle.GoogleCalTest [run]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GoogleCalTest [:appRun]" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Gradle.GoogleCalTest [appRun]" />
         <item itemvalue="Gradle.GoogleCalTest [run]" />
         <item itemvalue="Gradle.GoogleCalTest [:war]" />
-        <item itemvalue="Gradle.GoogleCalTest [war]" />
       </list>
     </recent_temporary>
   </component>
@@ -299,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656560323497</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Display the year next to the month DONE&#10;Fix so that if clicked off a date it returns as null. and set it to the current date and the next date. DONE&#10;Add so that if user clicks on next months date the calendar switches to the next month. DONE">
+      <created>1656622023145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656622023145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -330,10 +339,15 @@
     <MESSAGE value="test" />
     <MESSAGE value="Added an interactive calendar to the website while also keeping the previous sections to add an event on the bottom of the page." />
     <MESSAGE value="Add more functionality to the calendar. &#10;Added a feature where when the user clicks on a date, there will be a pop up and it auto fills the dates to the clicked date and the next date after." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more functionality to the calendar. &#10;Added a feature where when the user clicks on a date, there will be a pop up and it auto fills the dates to the clicked date and the next date after." />
+    <MESSAGE value="//Display the year next to the month DONE&#10;//Fix so that if clicked off a date it returns as null. and set it to the current date and the next date. DONE&#10;//Add so that if user clicks on next months date the calendar switches to the next month. DONE" />
+    <MESSAGE value="Display the year next to the month DONE&#10;Fix so that if clicked off a date it returns as null. and set it to the current date and the next date. DONE&#10;Add so that if user clicks on next months date the calendar switches to the next month. DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Display the year next to the month DONE&#10;Fix so that if clicked off a date it returns as null. and set it to the current date and the next date. DONE&#10;Add so that if user clicks on next months date the calendar switches to the next month. DONE" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/GoogleCalTest$Main__1_.ic" NAME="Main (1) Coverage Results" MODIFIED="1657211500041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
