@@ -27,7 +27,7 @@ import java.util.List;
 /* class to demonstrate use of Calendar events list API */
 public class Main {
     /** Application name. */
-    private static final String APPLICATION_NAME = "peepee";
+    private static final String APPLICATION_NAME = "Boom";
     /** Global instance of the JSON factory. */
     private static final JsonFactory JSON_FACTORY = GsonFactory.getDefaultInstance();
     /** Directory to store authorization tokens for this application. */

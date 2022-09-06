@@ -17,13 +17,20 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.GeneralSecurityException;
 import java.time.Duration;
-;
+import java.io.FileWriter;
+import java.io.IOException;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 
 public class ReceiveEmail {
 
     public String getInfo(String Token){
         String userInfoContent = "";
         try {
+            /**
+             * Scary lookin token here
+             */
+
             URL url = new URL("https://www.googleapis.com/oauth2/v2/userinfo?access_token=" + Token);
             InputStream content = url.openStream();
             int c;
@@ -35,7 +42,11 @@ public class ReceiveEmail {
 
                 System.out.println("IN THE CATCHHHHHHHHH");
 
-                File a = new File("C:\\Users\\Saatvik Sandal\\IdeaProjects\\GoogleCalTest\\tokens\\StoredCredential");
+            /**
+             * Here
+             */
+
+            File a = new File("C:\\Users\\Saatvik Sandal\\IdeaProjects\\GoogleCalTest\\tokens\\StoredCredential");
                 System.out.println(a.delete());
 
                 RenewToken b = new RenewToken();
@@ -49,9 +60,9 @@ public class ReceiveEmail {
 
                 try{
                     userInfoContent = getInfo(ReadEvents.getCredentialsShallow(GoogleNetHttpTransport.newTrustedTransport()).getAccessToken());
-                    System.out.println("Tried");
+                    //System.out.println("Tried");
                 } catch (GeneralSecurityException | IOException i){
-                    throw new IllegalArgumentException("Fuck");
+                    throw new IllegalArgumentException();
                 }
 
 
@@ -69,9 +80,36 @@ public class ReceiveEmail {
 
         // request.setAttribute("event", eventSummary); The request will come from a button press. When button is pressed, do a doPost
         // method and request.setAttribute("email", email);. Then insert that.
+        JSONObject userEmailToJSON = new JSONObject();
+
+
+        JSONObject emailObject = new JSONObject();
+        emailObject.put(email, userEmailToJSON);
+
+        try (FileWriter file = new FileWriter("emailList.json")) {
+            //We can write any JSONArray or JSONObject instance to the file
+            file.write(emailObject.toJSONString());
+            file.flush();
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        System.out.println(email);
         return email;
     }
 
+    //Made JSON file with email
+
+    //Make a button that asks for OAuth login in the groups window
+    // HTML button --> doGetRequest (doesn't redirect to new page) --> Create JSON File --> When original button is pressed,
+    // wait for JSON file and then make script.js read JSON file. Add the email to the group list.
+    // If can't wait for JSON file, make a reload button that the user presses after they completed OAUTH. In this case, a redirect
+    //is fine as long as it redirects back to the original page.
+
+    //Whenever the token is refreshed, make sure the JSON file is deleted.
 
 
 }

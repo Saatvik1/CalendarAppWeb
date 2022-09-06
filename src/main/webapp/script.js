@@ -163,7 +163,7 @@ const months = [
     "JUNE "+ date.getFullYear(),
     "JULY "+ date.getFullYear(),
     "AUGUST "+ date.getFullYear(),
-    "SEPTEMBER"+ date.getFullYear(),
+    "SEPTEMBER "+ date.getFullYear(),
     "OCTOBER "+ date.getFullYear(),
     "NOVEMBER "+ date.getFullYear(),
     "DECEMBER "+ date.getFullYear(),

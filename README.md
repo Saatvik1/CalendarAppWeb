@@ -1,6 +1,13 @@
 # CalendarAppWeb
 
-Goals for NOW: 
+
+# The purpose of this video is simply to show the function of the program I made. 
+
+
+
+
+
+Goals for future: 
 Make a group class, find a way to extract emails from the group and display it on the website
 Move things to a database, there shared circles will connect to google calendars, make a new calendar, 
 and have shared events. 

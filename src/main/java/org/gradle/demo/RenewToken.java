@@ -84,12 +84,12 @@ public class RenewToken {
             return credential;
         }
 
-        public void renewToken() throws IOException, GeneralSecurityException {
+        public static void renewToken() throws IOException, GeneralSecurityException {
             // Build a new authorized API client service.
             String eventList = "";
 
             final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
-            Calendar service = new Calendar.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
+            Calendar service = new Calendar.Builder(HTTP_TRANSPORT, JSON_FACTORY, ReadEvents.getCredentials(HTTP_TRANSPORT))
                     .setApplicationName(APPLICATION_NAME)
                     .build();
                 }

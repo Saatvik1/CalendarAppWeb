@@ -20,7 +20,7 @@ public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.getWriter().print("Hello, World!");
+        //response.getWriter().print("Hello, World!");
         ReadEvents re = new ReadEvents();
         try {
             response.getWriter().print("\n" + re.getEvents());
@@ -55,6 +55,8 @@ public class HelloServlet extends HttpServlet {
         try {
             newEvent.insertEvent();
         } catch (TokenResponseException | GeneralSecurityException tokenResponseException ) {
+
+
             File a = new File("C:\\Users\\Saatvik Sandal\\IdeaProjects\\GoogleCalTest\\tokens\\StoredCredential");
             a.delete();
             RenewToken b = new RenewToken();

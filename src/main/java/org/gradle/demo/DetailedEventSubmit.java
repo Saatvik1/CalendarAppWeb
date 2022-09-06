@@ -61,6 +61,8 @@ public class DetailedEventSubmit extends HttpServlet {
         try {
             newEvent.insertEvent();
         } catch (TokenResponseException | GeneralSecurityException tokenResponseException ) {
+
+
             File a = new File("C:\\Users\\Saatvik Sandal\\IdeaProjects\\GoogleCalTest\\tokens\\StoredCredential");
             a.delete();
             RenewToken b = new RenewToken();
@@ -69,7 +71,7 @@ public class DetailedEventSubmit extends HttpServlet {
             } catch (GeneralSecurityException e) {
                 throw new RuntimeException(e);
             }
-            //throw new RuntimeException(tokenResponseException);
+
 
         }
 
